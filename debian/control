@@ -10,21 +10,21 @@ Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/argus-pep-common
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/argus-pep-common
 Homepage: http://glite.web.cern.ch/glite/ 
 
-Package: libargus-pep-common-java
+Package: libpep-common-java
 Architecture: all
 Depends: ${misc:Depends}, ${maven:Depends}
 Recommends: ${maven:OptionalDepends}
-Suggests: libargus-pep-common-java-doc
+Suggests: libpep-common-java-doc
 Description: Argus PEP client and server common library
  XACML based authorization service developed within the gLite project.
 
-Package: libargus-pep-common-java-doc
+Package: libpep-common-java-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}, ${maven:DocDepends}
 Recommends: ${maven:DocOptionalDepends}
-Suggests: libargus-pep-common-java
+Suggests: libpep-common-java
 Description: Documentation for Argus PEP client and server common library
  XACML based authorization service developed within the gLite project.
  .
- This package contains the API documentation of libargus-pep-common-java.
+ This package contains the API documentation of libpep-common-java.
