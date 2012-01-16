@@ -1,6 +1,5 @@
-argus-pep-common (2.1.1-1) UNRELEASED; urgency=low
+argus-pep-common (2.2-1) oneiric; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your
-    ITP>
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
- -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Wed, 11 Jan 2012 14:33:04 +0100
+ -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Tue, 17 Jan 2012 00:11:33 +0100
