@@ -15,6 +15,5 @@
 #   junit junit jar s/3\\..*/3.x/
 
 com.mycila.maven-license-plugin maven-license-plugin * * * *
-junit junit * * * *
 org.apache.maven.plugins maven-jxr-plugin * * * *
 org.apache.maven.plugins maven-source-plugin * * * *
