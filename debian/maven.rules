@@ -20,6 +20,6 @@ junit junit * s/3\..*/3.x/ * *
 commons-httpclient commons-httpclient jar s/3\..*/3.x/ * *
 log4j log4j jar s/1\.2\..*/1.2.x/ * *
 org.glite.authz argus-parent pom * * *
-org.glite.authz pep-common jar * * *
+org.glite.authz pep-common jar * s/.*/debian/ *
 commons-logging s/commons-logging-api/commons-logging/ * s/.*/debian/ * *
 org.mortbay.jetty * * s/6\..*/6.x/ * *
