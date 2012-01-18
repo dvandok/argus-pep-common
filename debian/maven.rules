@@ -16,6 +16,7 @@
 # and version starting with 3., replacing the version with 3.x
 #   junit junit jar s/3\\..*/3.x/
 
+junit junit * s/3\..*/3.x/ * *
 commons-httpclient commons-httpclient jar s/3\..*/3.x/ * *
 log4j log4j jar s/1\.2\..*/1.2.x/ * *
 org.glite.authz argus-parent pom * * *
