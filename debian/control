@@ -3,12 +3,12 @@ Section: java
 Priority: optional
 Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
 Uploaders: Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
-Build-Depends: debhelper (>= 7), cdbs, default-jdk, maven-debian-helper (>= 1.4)
-Build-Depends-Indep: libmaven-javadoc-plugin-java, argus-parent-maven, default-jdk-doc 
-Standards-Version: 3.9.1
-Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/argus-pep-common
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/argus-pep-common
-Homepage: http://glite.web.cern.ch/glite/ 
+Build-Depends: debhelper (>= 7), cdbs, default-jdk, maven-debian-helper (>= 1.4),
+ quilt
+Build-Depends-Indep: libmaven-javadoc-plugin-java, argus-parent-maven,
+ default-jdk-doc 
+Standards-Version: 3.9.2
+Homepage: https://twiki.cern.ch/twiki/bin/view/EGEE/AuthorizationFramework
 
 Package: libpep-common-java
 Architecture: all
@@ -16,7 +16,9 @@ Depends: ${misc:Depends}, ${maven:Depends}
 Recommends: ${maven:OptionalDepends}
 Suggests: libpep-common-java-doc
 Description: Argus PEP client and server common library
- XACML based authorization service developed within the gLite project.
+ ARGUS is a modular XACML based authorization service. The PEP (Policy
+ Enforcement Point) is the client to the authorization service. This
+ package contains common functionality to implement a PEP.
 
 Package: libpep-common-java-doc
 Architecture: all
