@@ -15,7 +15,7 @@ Copyright: 2012, Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
 License: Apache-2.0
 
 Files: src/main/java/com/caucho/*
-Copyright (c) 2001-2004 Caucho Technology, Inc.  All rights reserved.
+Copyright: Copyright (c) 2001-2004 Caucho Technology, Inc.  All rights reserved.
 License: Apache 1.1
  The Apache Software License, Version 1.1
 
