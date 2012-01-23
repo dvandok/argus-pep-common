@@ -26,7 +26,8 @@ Section: doc
 Depends: ${misc:Depends}, ${maven:DocDepends}
 Recommends: ${maven:DocOptionalDepends}
 Suggests: libpep-common-java
-Description: Documentation for Argus PEP client and server common library
- XACML based authorization service developed within the gLite project.
+Description: Argus PEP client and server common library, Javadoc API
+ ARGUS is a modular XACML based authorization service. The PEP (Policy
+ Enforcement Point) is the client to the authorization service.
  .
  This package contains the API documentation of libpep-common-java.
