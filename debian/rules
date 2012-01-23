@@ -3,8 +3,10 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/javahelper.mk
 include /usr/share/cdbs/1/class/maven.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
 
 JAVA_HOME := /usr/lib/jvm/default-java
 
-get-orig-source:
-	uscan --download-version $(DEB_UPSTREAM_VERSION) --force-download --rename
+# Override some of the targets that we really don't need
+DEB_MAVEN_DOC_TARGET = javadoc:javadoc
+DEB_MAVEN_INSTALL_DOC_TARGET = 
