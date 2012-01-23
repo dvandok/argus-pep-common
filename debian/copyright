@@ -5,11 +5,15 @@ Upstream-Contact:  Chad La Joie as developer, documentation
 Source: http://glite.web.cern.ch/glite/
 
 Files: *
-Copyright: 2008-2012, EGEE Collaboration
+Copyright: 2008-2012, Members of the EGEE Collaboration
 License: Apache-2.0
 
 Files: debian/*
 Copyright: 2012, Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
+License: Apache-2.0
+
+Files: debian/parent/pom.xml
+Copyright: 2008-2012, Members of the EGEE Collaboration
 License: Apache-2.0
 
 License: Apache-2.0
