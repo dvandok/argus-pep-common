@@ -10,14 +10,3 @@ JAVA_HOME := /usr/lib/jvm/default-java
 # Override some of the targets that we really don't need
 DEB_MAVEN_DOC_TARGET = javadoc:javadoc
 DEB_MAVEN_INSTALL_DOC_TARGET = 
-
-# TODO: figure out why the following is necessary. It seems that
-# running a pbuilder build ends up at dpkg-source --after-build and
-# wants to undo the quilt patches, while the pom.xml is still in the
-# state that mh_patchpoms left it in. Naturally, the patch on the original
-# pom.xml cannot be undone at that time, so as a (temporary) fix I've added
-# this rule to do mh_unpatchpoms manually. Could be a bug in the Debian Maven
-#repo helpers.
-
-binary/libpep-common-java::
-	mh_unpatchpoms -plibpep-common-java
