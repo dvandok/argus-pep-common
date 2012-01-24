@@ -1,4 +1,4 @@
-argus-pep-common (2.2~rc1-1) unstable; urgency=low
+argus-pep-common (2.2~rc1-1ubuntu1) oneiric; urgency=low
 
   * Initial release (Closes: #656542)
 
