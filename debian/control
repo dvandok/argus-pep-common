@@ -6,7 +6,7 @@ Uploaders: Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
 Build-Depends: debhelper (>= 7), cdbs, default-jdk, maven-debian-helper (>= 1.4),
  quilt, javahelper
 Build-Depends-Indep: libmaven-javadoc-plugin-java,
- default-jdk-doc 
+ default-jdk-doc, argus-parent-maven
 Standards-Version: 3.9.2
 Homepage: https://twiki.cern.ch/twiki/bin/view/EGEE/AuthorizationFramework
 
