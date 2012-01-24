@@ -3,7 +3,7 @@
 VERSION=$2
 TAR=../argus-pep-common_$VERSION.orig.tar.gz
 DIR=argus-pep-common-$VERSION
-TAG=$VERSION
+TAG=`echo $VERSION | sed -e 's/\./_/g'`
 REPO=http://svn.cern.ch/guest/glxa/pep-java-common
 
 svn export $REPO/tags/${TAG} $DIR
