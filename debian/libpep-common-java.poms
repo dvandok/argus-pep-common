@@ -24,4 +24,4 @@
 #     temporarily for certain artifacts such as Javadoc jars.
 #
 debian/parent/pom.xml
-pom.xml --has-package-version --no-parent
+pom.xml --has-package-version
