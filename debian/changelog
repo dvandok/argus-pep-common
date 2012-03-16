@@ -1,3 +1,14 @@
+argus-pep-common (2.2.0-1) unstable; urgency=low
+
+  * new upstream release
+  * drop use of javahelper
+  * updated debian policy to 3.9.3
+  * use multiple source tarballs to include the parent pom instead of depending on
+    a separate package.
+
+
+ -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Fri, 16 Mar 2012 10:25:03 +0100
+
 argus-pep-common (2.2~rc1-1) unstable; urgency=low
 
   * Initial release (Closes: #656542)
