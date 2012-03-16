@@ -1,0 +1,11 @@
+argus-pep-common (2.2.0-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Fri, 16 Mar 2012 10:25:03 +0100
+
+argus-pep-common (2.2~rc1-1) unstable; urgency=low
+
+  * Initial release (Closes: #656542)
+
+ -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Tue, 17 Jan 2012 00:11:33 +0100

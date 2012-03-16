@@ -1,0 +1,7 @@
+version=3
+# Download the sources from svn; there are no separate source packages.
+opts=uversionmangle=s/_/./g \
+ http://svn.cern.ch/guest/glxa/pep-java-common/tags/ \
+ ([\d_]+)/ \
+ debian \
+ debian/orig-tar.sh

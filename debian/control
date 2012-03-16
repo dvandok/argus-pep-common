@@ -1,0 +1,33 @@
+Source: argus-pep-common
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
+Build-Depends: debhelper (>= 7), cdbs, default-jdk, maven-debian-helper (>= 1.4),
+ javahelper
+Build-Depends-Indep: libmaven-javadoc-plugin-java,
+ default-jdk-doc, argus-parent-maven
+Standards-Version: 3.9.2
+Homepage: https://twiki.cern.ch/twiki/bin/view/EGEE/AuthorizationFramework
+
+Package: libpep-common-java
+Architecture: all
+Depends: ${misc:Depends}, ${maven:Depends}
+Recommends: ${maven:OptionalDepends}
+Suggests: libpep-common-java-doc
+Description: Argus PEP client and server common library
+ ARGUS is a modular XACML based authorization service. The PEP (Policy
+ Enforcement Point) is the client to the authorization service. This
+ package contains common functionality to implement a PEP.
+
+Package: libpep-common-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}, ${maven:DocDepends}
+Recommends: ${maven:DocOptionalDepends}
+Suggests: libpep-common-java
+Description: Argus PEP client and server common library, Javadoc API
+ ARGUS is a modular XACML based authorization service. The PEP (Policy
+ Enforcement Point) is the client to the authorization service.
+ .
+ This package contains the API documentation of libpep-common-java.

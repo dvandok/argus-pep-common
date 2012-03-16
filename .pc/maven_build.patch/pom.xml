@@ -352,7 +352,4 @@
         <name>EMI - European Middleware Initiative</name>
         <url>http://www.eu-emi.eu/</url>
     </organization>
-    <modules>
-      <module>pep-common</module>
-  </modules>
 </project>

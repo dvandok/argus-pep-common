@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.glite.authz</groupId>
+        <artifactId>argus-parent</artifactId>
+        <version>1.5</version>
+        <relativePath>../emi.argus.parent</relativePath>
+    </parent>
+
+    <name>Argus PEP client and server common library</name>
+    <groupId>org.glite.authz</groupId>
+    <artifactId>pep-common</artifactId>
+    <version>2.2.0</version>
+    <packaging>jar</packaging>
+
+    <description>XACML based authorization service developed within the gLite project.</description>
+    <url>http://glite.web.cern.ch/glite/</url>
+    <inceptionYear>2008</inceptionYear>
+
+    <dependencies>
+       <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>        
+     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.mycila.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <header>project/LICENSE.template</header>
+                    <mapping>
+                        <java>SLASHSTAR_STYLE</java>
+                        <ini>SCRIPT_STYLE</ini>
+                    </mapping>
+                    <includes>
+                        <include>src/**</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/com/caucho/**</exclude>
+                        <exclude>**/resources/**</exclude>
+                        <exclude>**/credentials/**</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <links>
+                        <link>http://java.sun.com/j2se/1.5.0/docs/api/
+                        </link>
+                    </links>
+                    <quiet>true</quiet>
+                    <aggregate>true</aggregate>
+                    <author>false</author>
+                    <version>true</version>
+                    <doctitle>${project.name} ${project.version} Java API.</doctitle>
+                    <windowtitle>${project.name} ${project.version} Java API.
+                    </windowtitle>
+                    <overview>src/main/java/overview.html</overview>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <configuration>
+                    <aggregate>true</aggregate>
+                    <outputDirectory>${project.reporting.outputDirectory}/xref
+                    </outputDirectory>
+                    <doctitle>${project.name} ${project.version} Code Cross-Reference
+                    </doctitle>
+                    <windowtitle>${project.name} ${project.version} Java API.
+                    </windowtitle>
+                    <javadocDir>${project.reporting.outputDirectory}/apidocs
+                    </javadocDir>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <configuration>
+                    <aggregate>true</aggregate>
+                    <outputDirectory>${project.reporting.outputDirectory}/unitTest
+                    </outputDirectory>
+                    <xrefLocation>${project.reporting.outputDirectory}/xref
+                    </xrefLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+    
+    <profiles>
+        <profile>
+            <id>EMI</id>
+            <build>
+                <finalName>pep-common</finalName>
+            </build>
+        </profile>
+    </profiles>
+    
+    <developers>
+        <developer>
+            <id>lajoie</id>
+            <name>Chad La Joie</name>
+            <organization>SWITCH</organization>
+            <organizationUrl>http://www.switch.ch/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>documentation</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>vtschopp</id>
+            <name>Valery Tschopp</name>
+            <organization>SWITCH</organization>
+            <organizationUrl>http://www.switch.ch/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>documentation</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt
+            </url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>EMI - European Middleware Initiative</name>
+        <url>http://www.eu-emi.eu/</url>
+    </organization>
+
+</project>

@@ -1,0 +1,21 @@
+Information about argus-pep-common
+------------------------------
+
+This package was debianized using the mh_make command
+from the maven-debian-helper package.
+
+The build system uses Maven but prevents it from downloading
+anything from the Internet, making the build compliant with
+the Debian policy.
+
+The original sources were obtained with the following command:
+
+svn export -r 2729 http://svn.cern.ch/guest/glxa/pep-java-common/branches/2_2/ argus-pep-common-2.2~rc1
+tar cfz argus-pep-common_2.2~rc1.orig.tar.gz argus-pep-common-2.2~rc1
+
+There is no official source archive released yet, so this is
+essentially a preview.
+
+The sources may be explored using the web interface:
+
+http://svnweb.cern.ch/world/wsvn/glxa/pep-java-common/branches/2_2/
