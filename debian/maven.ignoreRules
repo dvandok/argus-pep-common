@@ -17,3 +17,4 @@
 com.mycila.maven-license-plugin maven-license-plugin * * * *
 org.apache.maven.plugins maven-jxr-plugin * * * *
 org.apache.maven.plugins maven-source-plugin * * * *
+org.apache.maven.plugins maven-resources-plugin * * * *
