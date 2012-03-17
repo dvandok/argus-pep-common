@@ -1,5 +1,5 @@
 Information about argus-pep-common
-------------------------------
+----------------------------------
 
 This package was debianized using the mh_make command
 from the maven-debian-helper package.
@@ -10,12 +10,25 @@ the Debian policy.
 
 The original sources were obtained with the following command:
 
-svn export -r 2729 http://svn.cern.ch/guest/glxa/pep-java-common/branches/2_2/ argus-pep-common-2.2~rc1
-tar cfz argus-pep-common_2.2~rc1.orig.tar.gz argus-pep-common-2.2~rc1
-
-There is no official source archive released yet, so this is
-essentially a preview.
+./orig-tar.sh 2.2.0
 
 The sources may be explored using the web interface:
 
 http://svnweb.cern.ch/world/wsvn/glxa/pep-java-common/branches/2_2/
+
+
+The ARGUS framework is a collection of Java software built with
+maven. The upstream maintainers decided to list all of the project's
+dependencies in a single POM. This parent is required to build each
+and every component of the ARGUS framework.
+
+For Debian this would lead to a single argus-parent package which is
+just a single pom.xml file, that all of the other ARGUS components
+would depend on. Instead, I've decided to include the parent for each
+component, following some hints by Ludovic Claude. This means that
+this package builds from two source tarballs:
+
+ - the parent is placed in the orig.tar.gz tarball, while 
+ - the pep-common component is in ...orig-pep-common.tar.gz.
+
+Dpkg-sources knows what to do with this.
