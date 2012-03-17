@@ -3,10 +3,10 @@ argus-pep-common (2.2.0-1) unstable; urgency=low
   * New upstream release
   * copyright: set format header to official string for DEP5.
   * control:
-	- updated to standards-version 3.9.3
-	- remove argus-parent-maven dep (included in sources now)
+    - updated to standards-version 3.9.3
+    - remove argus-parent-maven dep (included in sources now)
   * rules: remove javahelper; just use maven.mk. This means javadoc should be
-	mentioned in the .install file instead of the .javadoc file.
+    mentioned in the .install file instead of the .javadoc file.
   * README.source has further explainations.
 
  -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Fri, 16 Mar 2012 10:25:03 +0100
