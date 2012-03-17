@@ -24,4 +24,4 @@
 #     temporarily for certain artifacts such as Javadoc jars.
 #
 pom.xml
-pep-common/pom.xml --has-package-version
+pep-common/pom.xml --has-package-version --java-lib
