@@ -1,3 +1,13 @@
+Description: Add a module to link parent and main component
+ The source of this package is comprised of two components:
+ the main sources and the parent, which is only a single pom.xml
+ file. This parent is shared among several ARGUS components, and
+ lists all the dependencies needed by all the components.
+ Normally a maven build would be started from a component
+ and maven would look for the parent, but in this setup for
+ the Debian build, maven starts from the parent and needs to
+ find the module to build.
+Author: Dennis van Dok <dennisvd@nikhef.nl>
 --- a/pom.xml
 +++ b/pom.xml
 @@ -352,4 +352,7 @@
