@@ -1,3 +1,9 @@
+argus-pep-common (2.2.0-2) unstable; urgency=low
+
+  * control: removed javahelper dependency, added junit dependency
+
+ -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Sun, 18 Mar 2012 14:30:58 +0100
+
 argus-pep-common (2.2.0-1) unstable; urgency=low
 
   * New upstream release
